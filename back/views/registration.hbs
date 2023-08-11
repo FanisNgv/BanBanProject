@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/BanBanIcon.png" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" href="/css/auth_reg.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <title>Registration</title>
+</head>
+<body>
+<div class="login">
+    <div class="auth">
+        <h1>Регистрация</h1>
+    </div>
+    <form class="auth_reg_form"  id="auth_reg_form" onsubmit="return roleIsChosen();" method="post" action="/auth/registration">
+        <input type="text" name="username" placeholder="Введите логин">
+        <input type="password" name="password" placeholder="Введите пароль">
+        <div class="role">
+            <input type="radio" name="role" id="TeamLeadRole" value="TeamLead">
+            <label for="TeamLeadRole">Тимлид</label>
+            <input type="radio" name="role" id="DeveloperRole" value="Developer">
+            <label for="DeveloperRole">Разработчик</label>
+        </div>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+<script src="/regHandler.js" async defer></script></body>
+</html>

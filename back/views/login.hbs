@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/BanBanIcon.png" type="image/x-icon"/>
+    <link type="text/css" rel="stylesheet" href="/css/auth_reg.css" />
+    <title>Login</title>
+</head>
+<body>
+<div class="login">
+    <div class="auth">
+        <h1>Авторизация</h1>
+    </div>
+    <form class="auth_reg_form" method="post" action="/auth/login">
+        <input type="text" name="username" placeholder="Введите логин">
+        <input type="password" name="password" placeholder="Введите пароль">
+        <button type="submit">Войти</button>
+        <a href="/auth/registration">Еще не зарегистрированы?</a>
+        
+    </form>
+</div>
+</body>
+</html>

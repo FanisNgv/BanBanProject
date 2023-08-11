@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+.Desk {
+    background-image: url("../../public/BanBan.jpg");
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+header{
+    background-color: #2B2D42;
+    border: 2px solid #EF233C;
+    border-radius: 10px;
+}
+.MainBar{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    font-size: 32px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+.kanban-board{
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.kanban-column{
+    border: 2px solid #EF233C;
+    background-color: #2B2D42;
+    width: 100%;
+}
+.kanban-items{
+    font-size: 20px;
+    border: 2px solid #EF233C;
+    list-style: none;
+    margin-left: 0;
+}
+.kanban-item{
+    font-size: 20px;
+    border: 2px solid #EF233C;
+    list-style: none;
+    margin-left: 0;
+}
+.logo{
+    cursor: pointer;
+}
+.logo:hover{
+    color: #d5d5d5;
+}
+.ToDo{
+    display: flex;
+    justify-content: center;
+}
+.ToDo button{
+    cursor: pointer;
+    width: 30px;
+    background-color: #202231;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #EF233C;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+.ToDo button:hover{
+    background-color: #ef233c;
+    cursor: pointer;
+}
+.ToDo button:active{
+    background-color: #ef233c;
+    transform: translateY(3px);
+    transition-duration: 0.3s;
+}
+.userName{
+    position: relative;
+}
+.projectIcon{
+    position: absolute;
+    margin-left: -55px;
+}

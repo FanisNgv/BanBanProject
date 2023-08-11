@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.login {
+    background-image: url("../BanBan.jpg");
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+.auth {
+    display: flex;
+    justify-content: center;
+}
+
+.auth h1 {
+    color: white;
+    font-size: 48px;
+    font-family: 'Roboto Mono', system-ui, -apple-system, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+    font-style: normal;
+}
+
+.auth_reg_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 35%;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 35%;
+    margin-top: 20px;
+    background-color: #202231;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #EF233C;
+    border-radius: 20px;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+
+button[type="submit"]:hover {
+    background-color: #ef233c;
+    cursor: pointer;
+}
+
+button[type="submit"]:active {
+    background-color: #ef233c;
+    box-shadow: 0 5px #ef233c;
+    transform: translateY(3px);
+    transition-duration: 0.3s;
+}
+
+a {
+    color: #ef233c;
+}
+
+a:hover {
+    color: #d90429;
+}
+#handleDialog{
+    display: none;
+}
